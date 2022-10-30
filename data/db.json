@@ -1,0 +1,70 @@
+{
+  "Cases": [
+    {
+      "id": 1,
+      "name": "1STPLAYER ZX7",
+      "price": 9490,
+      "availability": true
+    },
+    {
+      "id": 2,
+      "name": "1STPLAYER BASS TYPE A [BASS-TA]",
+      "price": 7990,
+      "availability": true
+    },
+    {
+      "id": "100",
+      "name": "John",
+      "email": "john@example.org",
+      "password": "123"
+    },
+    {
+      "id": "101",
+      "name": "Comp",
+      "price": 1000,
+      "availability": true
+    },
+    {
+      "name": "Comp",
+      "price": 1000,
+      "availability": true,
+      "id": "ThBuDGn"
+    },
+    {
+      "name": "Comp",
+      "price": 1000,
+      "availability": true,
+      "id": "wrUVSDd"
+    },
+    {
+      "name": "Comp",
+      "price": 1000,
+      "availability": true,
+      "id": "KdyZVlg"
+    },
+    {
+      "name": "Comp",
+      "price": 1000,
+      "availability": true,
+      "id": "8zns9vn"
+    },
+    {
+      "name": "Comp",
+      "price": 1000,
+      "availability": true,
+      "id": "_GjkC4V"
+    },
+    {
+      "name": "Comp",
+      "price": 1000,
+      "availability": true,
+      "id": "WxL1RC0"
+    },
+    {
+      "name": "Comp",
+      "price": 1000,
+      "availability": true,
+      "id": "WiEQ-eK"
+    }
+  ]
+}

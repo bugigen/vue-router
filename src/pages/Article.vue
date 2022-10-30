@@ -1,46 +1,59 @@
 <template>
 <div>
   <button @click="getFetchGet">Fetch Get</button>
-  {{response[0]}}
+  {{responseGet}}
   <br>
   <button @click="getFetchPost">Fetch Post</button>
-  {{response2}}
+  {{responsePost}}
 </div>
 </template>
 
 <script>
+import {ref} from "vue";
+
 export default {
   name: "ArticleComponent",
   data() {
     return {
-      response: {},
-      response2: {},
-      url: 'http://192.168.25.81:81/api/user',
-      user: {
-        name: 'Kelly Hettinger',
-        email: 'quincy3qq7@example.org',
-        password: 123
+      // responseGet: [],
+      responsePost: [],
+      // url: 'http://192.168.25.81:81/api/user',
+      url: "http://localhost:3000/Cases",
+      idRandom: Math.random(),
+      part: {
+        id: this.idRandom,
+        name: 'Comp',
+        price: 1000,
+        availability: true
       }
-
     }
   },
   methods: {
     async getFetchGet() {
       const response = await fetch(this.url);
-      this.response = await response.json();
+      this.responseGet = await response.json();
     },
     async getFetchPost() {
-      const response = await fetch(this.url, {
+      let response = await fetch(this.url, {
         method: 'POST',
-        mode: 'no-cors',
+        // mode: 'no-cors',
         headers: {
-          'Content-Type': 'application/x-www-form-urlencoded'
+          'Content-Type': 'application/json;charset=utf-8'
         },
-        body: new URLSearchParams(this.user).toString()
+        // body: new URLSearchParams(this.part).toString()
+        body: JSON.stringify(this.part)
       })
-      this.response2 = await response.json();
+      this.responsePost = await response.json();
     },
-  }
+  },
+  setup() {
+    let responseGet = ref();
+    // let responsePost = ref([]);
+    return {
+      responseGet,
+      // responsePost
+    };
+  },
 }
 </script>
 
