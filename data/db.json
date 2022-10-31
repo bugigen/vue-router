@@ -41,6 +41,18 @@
       "name": "Comp",
       "price": 1000,
       "availability": true
+    },
+    {
+      "id": 0.5394131504146038,
+      "name": "Comp",
+      "price": 1000,
+      "availability": true
+    },
+    {
+      "id": 0.6599964900871578,
+      "name": "Comp",
+      "price": 1000,
+      "availability": true
     }
   ]
 }

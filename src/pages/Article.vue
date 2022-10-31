@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import {reactive} from "vue";
+import {ref} from "vue";
 
 export default {
   name: "ArticleComponent",
@@ -20,8 +20,8 @@ export default {
   },
   methods: {},
   setup() {
-    let responseGet = reactive({});
-    let responsePost = reactive({});
+    let responseGet = ref();
+    let responsePost = ref();
     const url = "http://localhost:3000/Cases";
     const part = {
       id: Math.random(),
@@ -32,8 +32,8 @@ export default {
 
     let getFetchGet = async () => {
       const response = await fetch(url);
-      responseGet = await response.json();
-      console.log(responseGet)
+      responseGet.value = await response.json();
+      console.log(responseGet.value)
     }
 
     let getFetchPost = async () => {
@@ -44,8 +44,8 @@ export default {
         },
         body: JSON.stringify(part)
       })
-      responsePost = await response.json();
-      console.log(responsePost)
+      responsePost.value = await response.json();
+      console.log(responsePost.value)
     }
     return {
       responseGet,
