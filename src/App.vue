@@ -21,16 +21,16 @@ export default {
   }
 }
 
-
 </script>
 
 <style>
 body {
-  background: seagreen;
+  background: #2e8a57;
 }
 
 .nav a {
   cursor: pointer;
   text-decoration: underline;
+  color: #551a8a;
 }
 </style>

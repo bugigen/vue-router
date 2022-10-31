@@ -25,46 +25,22 @@
       "availability": true
     },
     {
+      "id": 0.6520525140082101,
       "name": "Comp",
       "price": 1000,
-      "availability": true,
-      "id": "ThBuDGn"
+      "availability": true
     },
     {
+      "id": 0.6298919953685764,
       "name": "Comp",
       "price": 1000,
-      "availability": true,
-      "id": "wrUVSDd"
+      "availability": true
     },
     {
+      "id": 0.7870700698791038,
       "name": "Comp",
       "price": 1000,
-      "availability": true,
-      "id": "KdyZVlg"
-    },
-    {
-      "name": "Comp",
-      "price": 1000,
-      "availability": true,
-      "id": "8zns9vn"
-    },
-    {
-      "name": "Comp",
-      "price": 1000,
-      "availability": true,
-      "id": "_GjkC4V"
-    },
-    {
-      "name": "Comp",
-      "price": 1000,
-      "availability": true,
-      "id": "WxL1RC0"
-    },
-    {
-      "name": "Comp",
-      "price": 1000,
-      "availability": true,
-      "id": "WiEQ-eK"
+      "availability": true
     }
   ]
 }
